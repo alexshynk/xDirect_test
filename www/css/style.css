@@ -1,0 +1,410 @@
+body{
+	padding: 0;
+	margin:0;
+	position: relative;
+	width: 100%;
+}
+
+div#top_box{
+	margin: 0;
+	width: 100%;
+	position: relative;
+	left:0; top:0; right: 0;
+	overflow: hidden;
+	height: auto;
+	background: url(../img/banner3.jpg) no-repeat;
+	
+	div#top_banner{
+		margin: 0;
+		padding: 3px 10%;
+		background: rgba(255,255,255,0.5); 
+		width: 100%;
+		border: none;
+		position: absolute;
+		left:0; top:0; right: 0;
+		overflow: hidden;
+		box-sizing: padding-box;
+		z-index: 1;
+		
+		.logo
+		{
+			float: left;
+			width: 179px;
+			max-width: 20%;
+			overflow: hidden;
+			position: relative;
+		}		
+	}
+	
+	img#face_img{
+		position: relative;
+
+		margin: auto;
+		display: block;
+
+		max-width: 25%;
+		z-index: 3;
+	}
+
+	div.transp_button{
+		border:2px solid blue;
+		border-radius: 5px 5px;
+		background: rgba(255,255,255,0);
+		color: black;
+		position: absolute;
+		bottom: 5%; left: 0; right: 0;
+		margin: auto;
+		width: 170px;
+		text-align: center;
+		padding: 5px;
+		z-index: 5;
+	}
+
+	div.transp_button:hover{
+		background: rgba(255,255,255,1);
+		color: black;
+		cursor: pointer;
+	}
+
+	div.gradient{
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) ,rgba(255,255,255,1) );
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		bottom:0;
+		z-index: 4;
+	}	
+	
+}
+
+
+div.main_box_2{
+	white-space: pre-line;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	
+}
+
+div.main_box_3{
+	position: relative;
+	padding: 5px;
+	text-align: center;
+	background: url(../img/usdcad.h42810-630x258.png) no-repeat;
+	background-size: 100%;
+	overflow: hidden;
+	
+	div.layer1{
+		background: rgba(255,255,255,0.5);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;	
+		z-index: 0;
+	}
+
+	table.tabl1{
+		border-spacing: 15px 15px;
+		border-collapse: separate;
+		text-align: center;
+		margin: auto;
+		z-index: 3;
+		position: relative;
+		
+		div.avatar{
+			width: 100px;
+			height: 100px;
+			border-radius: 50px 0px 50px 50px;
+			border-left: 2px solid blue;
+			border-bottom: 2px solid blue;
+			display: inline-block;
+			overflow: hidden;
+			position: relative;
+		}
+
+		div.avatar img{
+			height: 100%;
+		}
+
+		div.avatar_desc{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			margin-left: 3px;
+			overflow: hidden;
+			font-size: x-small;
+			font-weight: bold;
+			text-align: left;
+			line-height: 120%;
+		}		
+	}	
+}
+
+
+
+
+
+
+
+@color1: #585858;
+@color2: #6E6E6E;
+@color3: #848484;
+@color4: #F7D358;
+div.main_box_4{
+	background: url(../img/forex-trading-strategies-forex-t.jpg) no-repeat;
+	background-size: 100%;
+	position: relative;
+
+	div.main_box_4_I{
+		position: relative;
+		left:0; right:0;
+		margin: auto;
+		overflow: hidden;
+		width: 80%;
+		white-space: nowrap;
+		
+		div.step{
+			height: 100px;
+			width: 25%;
+			display: inline-block;
+			white-space: normal;
+			position: relative;
+			box-sizing: border-box;
+			padding-left: 1%;
+			
+			span.step{
+				color: orange;
+				font-size: large;
+				font-weight: bold;
+				position: absolute;
+				top: 3px;
+				left: 3px;
+			}
+
+			div.step_t{
+				height: 0;
+				width: 0;
+				border-left: 20px  solid transparent;
+				position: absolute;
+				top: 0; 
+				right: 0;	
+			}
+
+			div.step_b{
+				height: 0;
+				width: 0;
+				border-left: 20px  solid transparent;
+				position: absolute;
+				bottom: 0; 
+				right: 0;
+			}
+			
+		}
+		
+		span.step_text{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			height: 50%;
+			padding-right: 10px;
+			padding-left: 3px;
+			font-size: small;
+			color: white;
+		}		
+		
+		div.step1{
+			background-color: @color1;
+		}
+
+		div.step1_b{
+			border-bottom: 35px solid @color2; 
+		}
+
+		div.step1_t{
+			border-top: 35px solid @color2; 
+		}		
+	
+		div.step2{
+			background-color: @color2;
+		}
+
+		div.step2_b{
+			border-bottom: 35px solid @color3; 
+		}
+
+		div.step2_t{
+			border-top: 35px solid @color3; 
+		}
+
+		div.step3{
+			background-color: @color3;
+		}
+
+		div.step3_b{
+			border-bottom: 35px solid @color4; 
+		}
+
+		div.step3_t{
+			border-top: 35px solid @color4; 
+		}
+
+		div.step4{
+			height: 100px;
+			width: 20%;
+			display: inline-block;
+			white-space: normal;
+			position: relative;	
+			background-color: @color4;
+			text-align: left;
+			overflow: hidden;
+			padding-left: 1%;
+			box-sizing: border-box;
+		}
+
+		div.step4_add{
+			height: 100px;
+			width: 5%;
+			white-space: normal;
+			overflow: hidden;
+			background: linear-gradient(to right, rgba(247,211,88,1) ,rgba(255,255,255,0));
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+		}	
+	}
+}
+
+div.main_box_5{
+	position: relative;
+	background-size: white;
+	width: 100%;
+	height: 270px;	
+	
+	div.main_box_5_I{
+		position:absolute;
+		top: 30px; bottom: 5; left: 0; right: 0;
+		margin: auto;
+		overflow: hidden;
+		width: 80%;
+		min-width: 320px;
+		white-space: nowrap;
+		
+		div.box5_I{
+			position: absolute;
+			top: 0; left: 0;	
+			margin: auto;
+			height: 110px;
+			border: 1px solid blue;
+			float: left;
+			padding: 3px;
+			border-radius: 5px;
+			z-index: 2;
+		}
+		div.box5_I:hover{
+			background-color: #F2F5A9;
+			cursor: pointer;
+		}
+
+		div.box5_II{
+			position: relative;
+			right: 0; top:0;
+			text-align: left;
+			margin: auto;
+			padding-left: 10px;
+			display: inline-block;	
+			overflow: hidden;
+			height:200px;
+			width: 100%;
+			border-left: 180px solid transparent;
+			box-sizing: border-box;
+			z-index: 1;
+			
+			table.tbox5{
+				position: relative;
+				right: 0;
+				border-spacing: 5px 5px;
+				border-collapse: separate;
+				width: 100%;
+				table-layout: fixed;
+			}
+
+			table.tbox5 td{
+				position: relative;
+				width: 40%;
+				max-width: 200px;
+			}			
+		}
+
+		div.box5_II input[type=text]{
+			width: 100%;
+		}
+
+		div.box5_II input[type=button]{
+			height: 50px;
+			width: 100%;;
+			border: 2px solid blue;
+			border-radius: 5px;
+		}
+
+		div.box5_II input[type=button]:hover:enabled{
+			background-color: #F2F5A9;
+			cursor: pointer;
+		}
+
+		div.err_msg{
+			max-width: 500px;
+			color: red;
+		}		
+		
+	}	
+}
+
+
+div.main_box_6{
+	background: url(../img/5176481bed6aebrokerage_634.jpg) no-repeat;
+	background-size: 100%;
+	
+	div.main_box_6_I{
+		position:relative;
+		margin: auto;
+		overflow: hidden;
+		width: 60%;
+		white-space: nowrap;
+
+		div.box6_II{
+			color: white;
+			font-size: small;
+			text-align: center;
+			width: 25%;
+			height: 120px;
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+		}
+
+
+		div.box6_II img{
+			width: 30px;
+			margin: auto;
+			top: 0;
+			position: absolute;
+			left: 0;
+			right: 0;
+		}
+
+		div.box6_II > span{
+			position: absolute;
+			bottom: 0;
+			display: inline-block;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}		
+	}	
+}
+
+
+
